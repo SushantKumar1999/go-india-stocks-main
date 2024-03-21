@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: theme(colors.gray.100);
+    --color-bg-secondary: theme(colors.white);
+    --color-accent: theme(colors.sky.900);
+    --color-accent-hover: theme(colors.slate.950);
+    --color-danger: theme(colors.red.500);
+    --color-text: theme(colors.slate.800);
+    --color-dark-1: theme(colors.slate.900);
+    --color-dark-2: theme(colors.slate.700);
+    --color-dark-3: theme(colors.slate.200);
+  }
+}
+
+.container {
+  @apply mx-auto px-6 sm:px-8 md:px-28 lg:px-20 xl:px-0 max-w-screen-xl;
+}
+
+/* Typography */
+
+.heading-primary {
+  @apply hidden md:block text-2xl uppercase text-danger font-semibold my-4;
+}
+
+/* Social media icons */
+.post-btn {
+  @apply flex items-center gap-2;
+}
